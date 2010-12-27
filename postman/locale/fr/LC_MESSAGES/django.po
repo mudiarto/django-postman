@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: django-postman 1.0.0\n"
-"Report-Msgid-Bugs-To: http://bitbucket.org/psam/django-postman/issues\n"
-"POT-Creation-Date: 2010-12-22 22:57+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-27 13:36+0100\n"
 "PO-Revision-Date: 2010-12-15 17:19+0100\n"
 "Last-Translator: Patrick Samson <maxcom@laposte.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgstr ""
 "La date de réponse ne peut pas être positionnée sans au moins une réponse."
 
 #: .\admin.py:66
-msgid "The message cannot be replied without being in a thread."
+msgid "The message cannot be replied without being in a conversation."
 msgstr "Le message ne peut pas être répondu sans être dans une conversation."
 
 #: .\admin.py:88 .\admin.py:157 .\templates\postman\view.html.py:5
@@ -115,28 +115,28 @@ msgstr "{user.username} ({reason})"
 msgid "Writing to some users is not possible: {users}."
 msgstr "Écrire à certains utilisateurs n'est pas possible : {users}."
 
-#: .\forms.py:149 .\forms.py:161
+#: .\forms.py:148 .\forms.py:160
 msgid "Recipients"
 msgstr "Destinataires"
 
-#: .\forms.py:149 .\forms.py:161 .\templates\postman\base_folder.html.py:26
+#: .\forms.py:148 .\forms.py:160 .\templates\postman\base_folder.html.py:26
 #: .\templates\postman\reply.html.py:4
 msgid "Recipient"
 msgstr "Destinataire"
 
-#: .\forms.py:160
+#: .\forms.py:159
 msgid "Email"
 msgstr "Courriel"
 
-#: .\forms.py:176
+#: .\forms.py:175
 msgid "Undefined recipient."
 msgstr "Destinataire indéfini."
 
-#: .\forms.py:195
+#: .\forms.py:194
 msgid "Additional recipients"
 msgstr "Destinataires supplémentaires"
 
-#: .\forms.py:195
+#: .\forms.py:194
 msgid "Additional recipient"
 msgstr "Destinataire supplémentaire"
 
@@ -152,95 +152,95 @@ msgstr "Accepté"
 msgid "Rejected"
 msgstr "Rejeté"
 
-#: .\models.py:200
+#: .\models.py:197
 msgid "subject"
 msgstr "objet"
 
-#: .\models.py:201
+#: .\models.py:198
 msgid "body"
 msgstr "contenu"
 
-#: .\models.py:202 .\models.py:285
+#: .\models.py:199 .\models.py:281
 msgid "sender"
 msgstr "expéditeur"
 
-#: .\models.py:203 .\models.py:309
+#: .\models.py:200 .\models.py:305
 msgid "recipient"
 msgstr "destinataire"
 
-#: .\models.py:205
+#: .\models.py:201
 msgid "visitor"
 msgstr "visiteur"
 
-#: .\models.py:206
+#: .\models.py:202
 msgid "parent message"
 msgstr "message parent"
 
-#: .\models.py:207
+#: .\models.py:203
 msgid "root message"
 msgstr "message racine"
 
-#: .\models.py:208
+#: .\models.py:204
 msgid "sent at"
 msgstr "envoyé le"
 
-#: .\models.py:209
+#: .\models.py:205
 msgid "read at"
 msgstr "lu le"
 
-#: .\models.py:210
+#: .\models.py:206
 msgid "replied at"
 msgstr "répondu le"
 
-#: .\models.py:211
+#: .\models.py:207
 msgid "archived by sender"
 msgstr "archivé par l'expéditeur"
 
-#: .\models.py:212
+#: .\models.py:208
 msgid "archived by recipient"
 msgstr "archivé par le destinataire"
 
-#: .\models.py:213
+#: .\models.py:209
 msgid "deleted by sender at"
 msgstr "supprimé par l'expéditeur le"
 
-#: .\models.py:214
+#: .\models.py:210
 msgid "deleted by recipient at"
 msgstr "supprimé par le destinataire le"
 
-#: .\models.py:216
+#: .\models.py:212
 msgid "status"
 msgstr "état"
 
-#: .\models.py:218
+#: .\models.py:214
 msgid "moderator"
 msgstr "modérateur"
 
-#: .\models.py:219
+#: .\models.py:215
 msgid "moderated at"
 msgstr "modéré le"
 
-#: .\models.py:220
+#: .\models.py:216
 msgid "rejection reason"
 msgstr "motif de rejet"
 
-#: .\models.py:225
+#: .\models.py:221
 msgid "message"
 msgstr "message"
 
-#: .\models.py:226
+#: .\models.py:222
 msgid "messages"
 msgstr "messages"
 
-#: .\models.py:337
+#: .\models.py:333
 msgid "Undefined sender."
 msgstr "Expéditeur indéfini."
 
-#: .\models.py:481
+#: .\models.py:473
 msgid "pending message"
 msgstr "message en attente"
 
-#: .\models.py:482
+#: .\models.py:474
 msgid "pending messages"
 msgstr "messages en attente"
 
@@ -264,28 +264,28 @@ msgstr ""
 msgid "Re: {subject}"
 msgstr "Re: {subject}"
 
-#: .\views.py:121 .\views.py:187
+#: .\views.py:129 .\views.py:187
 msgid "Message successfully sent."
 msgstr "Message envoyé avec succès."
 
-#: .\views.py:123 .\views.py:189
+#: .\views.py:131 .\views.py:189
 msgid "Message rejected for at least one recipient."
 msgstr "Message rejeté pour au moins un destinataire."
 
-#: .\views.py:272
+#: .\views.py:276
 msgid "Select at least one object."
 msgstr "Sélectionner au moins un objet."
 
-#: .\views.py:278
-msgid "Message(s) or thread(s) successfully archived."
+#: .\views.py:282
+msgid "Message(s) or conversation(s) successfully archived."
 msgstr "Message(s) ou conversation(s) archivé(s) avec succès."
 
-#: .\views.py:283
-msgid "Message(s) or thread(s) successfully deleted."
+#: .\views.py:287
+msgid "Message(s) or conversation(s) successfully deleted."
 msgstr "Message(s) ou conversation(s) supprimé(s) avec succès."
 
-#: .\views.py:288
-msgid "Message(s) or thread(s) successfully recovered."
+#: .\views.py:292
+msgid "Message(s) or conversation(s) successfully recovered."
 msgstr "Message(s) ou conversation(s) restauré(s) avec succès."
 
 #: .\management\__init__.py:14
@@ -367,7 +367,7 @@ msgid "Sorry, this page number is invalid."
 msgstr "Désolé, ce numéro de page est invalide."
 
 #: .\templates\postman\base_folder.html.py:12
-msgid "by thread"
+msgid "by conversation"
 msgstr "par conversation"
 
 #: .\templates\postman\base_folder.html.py:13
@@ -530,7 +530,7 @@ msgstr ""
 "stockage à long terme, utilisez plutôt le dossier d'archivage."
 
 #: .\templates\postman\view.html.py:5
-msgid "Thread"
+msgid "Conversation"
 msgstr "Conversation"
 
 #: .\templates\postman\view.html.py:13
@@ -541,6 +541,6 @@ msgstr " :"
 msgid "Back"
 msgstr "Retour"
 
-#: .\templatetags\postman_tags.py:34
+#: .\templatetags\postman_tags.py:35
 msgid "<me>"
 msgstr "<moi>"

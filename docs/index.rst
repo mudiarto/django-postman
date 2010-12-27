@@ -29,7 +29,7 @@ Each user has access to a collection of messages, stored in folders:
 
 In folders, messages can be presented in two modes:
 
-* by **thread**, for a compact view: the original message and its replies are grouped in a set
+* by **conversation**, for a compact view: the original message and its replies are grouped in a set
   to constitute one sole entry.
   The lastest message (based on the time) is the representative of the set.
 * by **message**, for an expanded view: each message is considered by itself.
@@ -43,7 +43,7 @@ Here is a summary of features:
 * Optional exchange filtering plug-ins (blacklists)
 * Multi-recipient writing is possible (can be disabled by configuration)
   with min/max constraints
-* Messages are managed in threads
+* Messages are managed by conversations
 * Messages in folders are sortable by sender|recipient|subject|date
 * 'Archives' folder in addition to classic Inbox, Sent and Trash folders
 * A Quick-Reply form to only ask for a response text

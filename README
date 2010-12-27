@@ -13,7 +13,7 @@ and with these convenient features:
 - Optional exchange filtering plug-ins (blacklists)
 - Multi-recipient writing is possible (can be disabled by configuration)
   with min/max constraints
-- Messages are managed in threads
+- Messages are managed by conversations
 - Messages in folders are sortable by sender|recipient|subject|date
 - 'Archives' folder in addition to classic Inbox, Sent and Trash folders
 - A Quick-Reply form to only ask for a response text
