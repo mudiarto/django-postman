@@ -22,10 +22,10 @@ an email address for the reply. The email is obfuscated to the recipient.
 What is a message ? Roughly a piece of text, about a subject, sent by a sender to a recipient.
 Each user has access to a collection of messages, stored in folders:
 
-    | ``Inbox`` for incoming messages
-    | ``Sent`` for sent messages
-    | ``Archives`` for archived messages
-    | ``Trash`` for messages marked as deleted
+    | **Inbox** for incoming messages
+    | **Sent** for sent messages
+    | **Archives** for archived messages
+    | **Trash** for messages marked as deleted
 
 In folders, messages can be presented in two modes:
 
@@ -53,8 +53,11 @@ It has support for optional additional applications:
 
 * Autocomplete recipient field (default is 'django-ajax-selects'),
   with multiple recipient management
-* New message notification (default is 'django-notification')
-* Asynchronous mailer (default is 'django-mailer')
+* New message notification (default is `django-notification`_)
+* Asynchronous mailer (default is `django-mailer`_)
+
+.. _`django-notification`: http://github.com/jtauber/django-notification/
+.. _`django-mailer`: http://github.com/jtauber/django-mailer/
 
 Moderation
 ----------
@@ -65,8 +68,8 @@ to the recipient.  Possible usages are:
 * to make sure that no direct contact informations are exchanged when the site is an intermediary
   and delivers services based on subscription fees.
 
-Messages are first created in a ``pending`` state. A moderator is in charge to change them to
-a ``rejected`` or ``accepted`` state.  This operation can be done in two ways:
+Messages are first created in a *pending* state. A moderator is in charge to change them to
+a *rejected* or *accepted* state.  This operation can be done in two ways:
 
 * By a person, through the Admin site. A specially simplified change view is provided,
   with one-click buttons to accept or reject the message.
@@ -89,6 +92,7 @@ Contents:
 
    quickstart
    moderation
+   notification
    views
    features
    tags-filters

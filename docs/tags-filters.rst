@@ -5,15 +5,15 @@ The following tags and filters are available to your templates by loading the li
 
     {% load postman_tags %}
 
-Here are the other special libraries in the ``postman/templatetags/`` directory,
+Here are the other special libraries in the :file:`postman/templatetags/` directory,
 that are not intended for your site design:
 
-* ``postman_admin_modify.py``: a library exclusively designed for a customized change_form
+* :file:`postman_admin_modify.py`: a library exclusively designed for a customized change_form
   template used in the Admin site for the moderation of pending messages.
 
-* ``pagination_tags_for_tests.py``: a mock of the django-pagination application template tags,
+* :file:`pagination_tags_for_tests.py`: a mock of the django-pagination application template tags,
   only usable for the test suite in case the real application is not installed.
-  To rename to ``pagination_tags.py`` during the test session.
+  To rename to :file:`pagination_tags.py` during the test session.
 
 Tags
 ----

@@ -20,11 +20,11 @@ So there are some criteria to fulfill by a record to be really deleted from the 
 
 A management command is provided for this purpose:
 
-**django-admin.py postman_cleanup**
+:command:`django-admin.py postman_cleanup`
 
 It can be run as a cron job or directly.
 
-The ``--days`` option can be used to specify the minimal number of days a message/conversation
+A :option:`--days` option can be used to specify the minimal number of days a message/conversation
 must have been marked for deletion.
 Default value is 30 days.
 
@@ -35,6 +35,6 @@ A management command to run a test suite on the messages presently in the databa
 It checks messages and conversations for possible inconsistencies, in a read-only mode.
 No change is made on the data.
 
-**django-admin.py postman_checkup**
+:command:`django-admin.py postman_checkup`
 
 It can be run directly or better as a nightly cron job.

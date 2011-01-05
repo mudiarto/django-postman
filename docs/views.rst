@@ -5,7 +5,7 @@ Custom views
 
 styles
 ------
-Here is a sample of some CSS rules, usable for ``postman/views.html``::
+Here is a sample of some CSS rules, usable for :file:`postman/views.html`::
 
     .pm_message.pm_deleted             { text-decoration: line-through; }
     .pm_message.pm_deleted .pm_body    { display: none; }

@@ -41,7 +41,7 @@ Required settings
 
 Add ``postman`` to the ``INSTALLED_APPS`` setting of your project.
 
-Run a ``manage.py syncdb``.
+Run a :command:`manage.py syncdb`
 
 Include the URLconf ``postman.urls`` in your project's root URL configuration.
 
@@ -54,7 +54,7 @@ If you want to make use of a ``postman_unread_count`` context variable in your t
 add ``postman.context_processors.inbox`` to the ``TEMPLATE_CONTEXT_PROCESSORS`` setting
 of your project.
 
-You may specify some additional configuration options in your ``settings.py``:
+You may specify some additional configuration options in your :file:`settings.py`:
 
 ``POSTMAN_DISALLOW_ANONYMOUS``
     Set it to True if you do not allow visitors to write to users.
@@ -82,6 +82,7 @@ You may specify some additional configuration options in your ``settings.py``:
     *Defaults to*: None.
 
     To disable the moderation feature (no control, no filter):
+
     * Set this option to True
     * Do not provide any auto-moderation functions
 
@@ -147,7 +148,7 @@ If the django-ajax-selects application is used, the following URLs are reference
 * {{ MEDIA_URL }}css/jquery.autocomplete.css
 * {{ MEDIA_URL }}css/indicator.gif
 
-The ``postman/base.html`` template extends a ``base.html`` site template,
+The :file:`postman/base.html` template extends a :file:`base.html` site template,
 in which some blocks are expected:
 
 * title: in <html><head><title>, at least for a part of the entire title string
@@ -157,14 +158,14 @@ in which some blocks are expected:
 
 Medias
 ~~~~~~
-A CSS file is provided with the application, for the Admin site: ``postman/css/admin.css``.
+A CSS file is provided with the application, for the Admin site: :file:`postman/css/admin.css`.
 It is not obligatory but makes the display more confortable.
 
-The file is provided under ``postman/medias/``. It's up to you to make it visible to the URL resolver.
+The file is provided under :file:`postman/medias/`. It's up to you to make it visible to the URL resolver.
 
 For example:
 
-* In a production environment, set /<MEDIA_URL>/postman/ as a symlink to <Postman_module>/medias/postman/
+* In a production environment, set :file:`/<MEDIA_URL>/postman/` as a symlink to :file:`<Postman_module>/medias/postman/`
 * In a development environment (django's runserver), you can put in the URLconf, something like::
 
     ('^' + settings.MEDIA_URL.strip('/') + r'/(?P<path>postman/.*)$', 'django.views.static.serve',
@@ -175,7 +176,7 @@ See also :ref:`styles` for the stylesheets of views.
 Examples
 --------
 
-``settings.py``::
+:file:`settings.py`::
 
     INSTALLED_APPS = (
         # ...
@@ -199,6 +200,6 @@ Examples
         # 'arg_default': 'postman_friends', # no default, mandatory to enable the feature
     # } # default is {}
 
-``urls.py``::
+:file:`urls.py`::
 
     (r'^messages/', include('postman.urls')),

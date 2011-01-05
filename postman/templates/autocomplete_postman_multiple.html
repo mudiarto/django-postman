@@ -1,0 +1,13 @@
+{% extends "autocomplete.html" %}
+{% block script %}
+	$('#{{ html_id }}').autocomplete('{{ lookup_url }}', {
+		width: 320,
+		formatItem: function(row) { return row[1]; },
+		formatResult: function(row) { return row[2]; },
+		multiple: true,
+		dataType: "text"
+	})
+	$('#{{ html_id }}').result(function(event, data, formatted) {
+		$('#{{ html_id }}').trigger("added");
+	})
+{% endblock %}

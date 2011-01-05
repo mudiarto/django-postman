@@ -199,7 +199,7 @@ Auto-complete field
 An auto-complete functionality may be useful on the recipients field.
 
 To activate the option, set at least the ``arg_default`` key in the
-``POSTMAN_AUTOCOMPLETER_APP`` dictionary.  If the default ajax_select application is used,
+``POSTMAN_AUTOCOMPLETER_APP`` dictionary.  If the default ``ajax_select`` application is used,
 define a matching entry in the ``AJAX_LOOKUP_CHANNELS`` dictionary.
 
 Example::
@@ -211,13 +211,15 @@ Example::
         'arg_default': 'postman_users',
     }
 
-Support for multiple recipients is not turned on by default by django-ajax-selects.
+Support for multiple recipients is not turned on by default by `django-ajax-selects`_.
 To allow this capability, you have to pass the option ``multiple: true``.
+
+.. _`django-ajax-selects`: http://code.google.com/p/django-ajax-selects/
 
 Make your own templates, based on these two files, given as implementation examples:
 
-* postman/templates/autocomplete_postman_multiple.html
-* postman/templates/autocomplete_postman_single.html
+* :file:`postman/templates/autocomplete_postman_multiple.html`
+* :file:`postman/templates/autocomplete_postman_single.html`
 
 These examples include a correction necessary for the support of the 'multiple' option
 (in version 1.1.4 of django-ajax-selects).
