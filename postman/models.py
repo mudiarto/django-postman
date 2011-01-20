@@ -30,6 +30,9 @@ ORDER_BY_FIELDS = {
 }
 ORDER_BY_MAPPER = {'sender': 'f', 'recipient': 't', 'subject': 's', 'date': 'd'} # for templatetags usage
 
+dbms = settings.DATABASES['default']['ENGINE'].rsplit('.',1)[-1]
+QUOTE_CHAR = '`' if dbms == 'mysql' else '"'
+
 def get_order_by(query_dict):
     """
     Return a field name, optionally prefixed for descending order, or None if not found.
@@ -83,10 +86,10 @@ class MessageManager(models.Manager):
         else:
             return qs.filter(
                 models.Q(id__in=self._last_in_thread.filter(lookups)) | models.Q(lookups, thread__isnull=True)
-            ).extra(select={'count': 
-            'SELECT COUNT(*) FROM "postman_message" T'
-            ' WHERE T."thread_id" = "postman_message"."thread_id"'
-            })
+            ).extra(select={'count': QUOTE_CHAR.join([
+            'SELECT COUNT(*) FROM ', 'postman_message', ' T'
+            ' WHERE T.', 'thread_id', ' = ', 'postman_message', '.', 'thread_id', ' '
+            ])})
             # For single message, 'count' is returned as 0. Should be acceptable if known.
             # If not, replace "COUNT(*)" by "1+COUNT(*)" and add:
             # ' AND T."id" <> T."thread_id"'
