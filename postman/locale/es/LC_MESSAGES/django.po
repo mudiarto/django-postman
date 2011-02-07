@@ -1,12 +1,12 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Spanish translation of django-postman.
+# Copyright (C) 2010 Patrick Samson
+# This file is distributed under the same license as the django-postman package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: django-postman\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: django-postman 1.0.x\n"
+"Report-Msgid-Bugs-To: http://bitbucket.org/psam/django-postman/issues\n"
 "POT-Creation-Date: 2010-12-27 15:16+0100\n"
 "PO-Revision-Date: 2010-12-25 15:29+0000\n"
 "Last-Translator: psam <maxcom@laposte.net>\n"
