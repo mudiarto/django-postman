@@ -1,0 +1,16 @@
+*.pyc
+*.db
+.DS_Store
+.tmp*
+*.old
+*.swp
+*.swo
+*.orig
+.sass-cache/
+tags
+site_media/
+*~
+/lib/*
+unused/
+
+
